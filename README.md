@@ -40,13 +40,19 @@ Find us at:
 
 [WireGuard®](https://www.wireguard.com/) is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.
 
+ <ruby>Wireguard is an extremely simple<rt>Wireguardは非常にシンプルな</rt></ruby> <ruby>yet fast<rt>まだ速い</rt></ruby> <ruby>and modern VPN<rt>最新のVPN</rt></ruby> <ruby>that utilizes state-of-the-art cryptography.<rt>最先端の暗号化技術を活用しています。</rt></ruby> <ruby>It aims<rt>それは</rt></ruby> <ruby>to be faster,<rt>より速く、</rt></ruby> <ruby>simpler,<rt>よりシンプルに、</rt></ruby> <ruby>leaner,<rt>よりスリムな、</rt></ruby> <ruby>and more useful<rt>そしてより便利に</rt></ruby> <ruby>than IPsec,<rt>IPsecよりも、</rt></ruby> <ruby>while avoiding the massive headache.<rt>ひどい頭痛を避けながら。</rt></ruby> <ruby>It intends<rt>それは意図している</rt></ruby> <ruby>to be considerably more performant<rt>パフォーマンスが大幅に向上する</rt></ruby> <ruby>than OpenVPN.<rt>OpenVPN よりも。</rt></ruby> <ruby>WireGuard is designed<rt>WireGuardは</rt></ruby> <ruby>as a general purpose VPN<rt>汎用VPNとして</rt></ruby> <ruby>for running<rt>ランニング用</rt></ruby> <ruby>on embedded interfaces<rt>組み込みインターフェース</rt></ruby> <ruby>and super computers alike,<rt>スーパーコンピュータも同様に</rt></ruby> <ruby>fit<rt>フィット</rt></ruby> <ruby>for many different circumstances.<rt>さまざまな状況に対応します。</rt></ruby> <ruby>Initially released<rt>最初にリリースされた</rt></ruby> <ruby>for the Linux kernel,<rt>Linuxカーネルの場合、</rt></ruby> <ruby>it is now cross-platform (Windows,<rt>クロスプラットフォームになりました（Windows、</rt></ruby> <ruby>macOS,<rt>macOS、</rt></ruby> <ruby>BSD,<rt>BSD、</rt></ruby> <ruby>iOS,<rt>iOS、</rt></ruby> <ruby>Android)<rt>アンドロイド）</rt></ruby> <ruby>and widely deployable.<rt>広範囲に展開可能です。</rt></ruby> <ruby>It is currently<rt>現在、</rt></ruby> <ruby>under heavy development,<rt>急速な発展を遂げている</rt></ruby> <ruby>but already it might be regarded<rt>しかし、すでにそれは</rt></ruby> <ruby>as the most secure,<rt>最も安全なものとして、</rt></ruby> <ruby>easiest<rt>最も簡単</rt></ruby> <ruby>to use,<rt>使用する、</rt></ruby> <ruby>and simplest VPN solution<rt>最もシンプルなVPNソリューション</rt></ruby> <ruby>in the industry.<rt>業界で。</rt></ruby> 
+
 [![wireguard](https://www.wireguard.com/img/wireguard.svg)](https://www.wireguard.com/)
 
 ## Supported Architectures
 
 We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://distribution.github.io/distribution/spec/manifest-v2-2/#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
 
+ <ruby>We utilise the docker manifest<rt>Dockerマニフェストを活用します</rt></ruby> <ruby>for multi-platform awareness.<rt>マルチプラットフォーム対応。</rt></ruby> <ruby>More information is available<rt>詳細情報はこちら</rt></ruby> <ruby>from docker.<rt>dockerから。</rt></ruby> 
+
 Simply pulling `lscr.io/linuxserver/wireguard:latest` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+
+<ruby>Simply pulling `lscr.io/linuxserver/wireguard:latest` should retrieve the correct image<rt>`lscr.io/linuxserver/wireguard:latest` をプルするだけで正しいイメージが取得されます。</rt></ruby> <ruby>for your arch,<rt>あなたのアーチのために、</rt></ruby> <ruby>but you can also pull specific arch images<rt>特定のアーチイメージを取得することもできます</rt></ruby> <ruby>via tags.<rt>タグ経由。</rt></ruby> 
 
 The architectures supported by this image are:
 
@@ -59,6 +65,9 @@ The architectures supported by this image are:
 ## Application Setup
 
 During container start, it will first check if the wireguard module is already installed and loaded. Kernels newer than 5.6 generally have the wireguard module built-in (along with some older custom kernels). However, the module may not be enabled. Make sure it is enabled prior to starting the container.
+
+ <ruby>During container start,<rt>コンテナの起動中、</rt></ruby> <ruby>it will first check<rt>まず最初にチェックします</rt></ruby> <ruby>if the wireguard module is already installed<rt>Wireguardモジュールがすでにインストールされている場合</rt></ruby> <ruby>and loaded.<rt>そしてロードされました。</rt></ruby> <ruby>Kernels newer<rt>新しいカーネル</rt></ruby> <ruby>than 5.6 generally have the wireguard module built-in (along<rt>5.6より前のバージョンでは、Wireguardモジュールが組み込まれています（</rt></ruby> <ruby>with some older custom kernels).<rt>いくつかの古いカスタムカーネルを使用)。</rt></ruby> <ruby>However,<rt>しかし、</rt></ruby> <ruby>the module may not be enabled.<rt>モジュールが有効になっていない可能性があります。</rt></ruby> <ruby>Make sure it is enabled prior<rt>事前に有効になっていることを確認してください</rt></ruby> <ruby>to starting the container.<rt>コンテナを起動します。</rt></ruby> 
+
 
 This can be run as a server or a client, based on the parameters used.
 
